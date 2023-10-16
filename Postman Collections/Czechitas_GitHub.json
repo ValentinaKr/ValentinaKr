@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "3a928205-09ff-4f73-bd1d-9fec424e5e75",
+		"name": "Czechitas_GITHUB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Register Copy",
+			"id": "452952a2-27a3-481f-adce-7ac05a7849f9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "13|nGhAn2jhKnprrkHLydUxsTM2MzFs0ppt8IgMILKq"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"{{$randomFullName}}\",\r\n    \"email\": \"automation+{{$timestamp}}@gmail.com\",\r\n    \"password\": \"Lshhhk\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{baseURL}}api/users/register"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "2c1c198d-ff35-4877-85da-e3f44d2d7431",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "521550bb-d193-4114-87d2-ce307403344d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseurl",
+			"value": "https://datop23-the-rest-is-the-best-801c5cdb8cd1.herokuapp.com/",
+			"type": "string"
+		}
+	]
+}
