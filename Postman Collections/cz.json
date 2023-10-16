@@ -15,21 +15,21 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "13|nGhAn2jhKnprrkHLydUxsTM2MzFs0ppt8IgMILKq"
+						"token": ""
 					}
 				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"{{$randomFullName}}\",\r\n    \"email\": \"automation+{{$timestamp}}@gmail.com\",\r\n    \"password\": \"Lshhhk\"\r\n\r\n}",
+					"raw": "{\r\n    \"name\": \"{{$randomFullName}}\",\r\n    \"email\": \"automation+{{$timestamp}}@gmail.com\",\r\n    \"password\": \"Lshhhk\"\r\n    //test Github\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{baseURL}}api/users/register"
+				"url": "{{baseurl}}api/users/register"
 			},
 			"response": []
 		}
