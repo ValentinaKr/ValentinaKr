@@ -22,7 +22,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"{{$randomFullName}}\",\r\n    \"email\": \"automation+{{$timestamp}}@gmail.com\",\r\n    \"password\": \"Lshhhk\"\r\n    //test Github\r\n\r\n}",
+					"raw": "{\r\n    \"name\": \"{{$randomFullName}}\",\r\n    \"email\": \"automation+{{$timestamp}}@gmail.com\",\r\n    \"password\": \"Lshhhk\"\r\n    //test Github_DA_develop\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
